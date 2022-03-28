@@ -1,1 +1,3 @@
 # Projekt-Zespolowy
+
+Gra platformowa
