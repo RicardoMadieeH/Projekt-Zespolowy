@@ -342,5 +342,5 @@ SpriteAtlas:
   - door
   - shrooms
   m_RenderDataMap: {}
-  m_Tag: New Sprite Atlas
+  m_Tag: TerrainTilesSpriteAtlas
   m_IsVariant: 0
