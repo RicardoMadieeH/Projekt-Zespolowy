@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -140,4 +141,13 @@ public class CharacterController2D : MonoBehaviour
 
 		transform.Rotate(0f, 180f, 0f);
 	}
+
+	private void OnTriggerEnter2D(Collider2D collision){
+		if(collision.CompareTag("Finish") && GemController.totalGems == 5){
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			GemController.totalGems = 0;
+		}
+	}
+
+
 }
